@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/style.css">
+</head>
 <body>
 
 <h1>test</h1>
-  
+<p>test we are on netlify!</p> 
 
-
+<script type="text/javascript">
+    if ( document.documentElement.clientWidth > 900 ) {
+        document.getElementsByTagName("head")[0].insertAdjacentHTML( "beforeend", "<link rel='stylesheet' href='path/to/wide.css' />");
+    }
+    else if ( document.documentElement.clientWidth > 700 ) {
+        document.getElementsByTagName("head")[0].insertAdjacentHTML( "beforeend", "<link rel='stylesheet' href='path/to/medium.css' />");
+    }
+    else {
+        document.getElementsByTagName("head")[0].insertAdjacentHTML( "beforeend", "<link rel='stylesheet' href='path/to/narrow.css' />");
+    }
+</script>
 </body>
 </html>

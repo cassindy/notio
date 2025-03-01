@@ -1,0 +1,12 @@
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (min-width: 800px) {
+    body{
+        background-color: rgb(255, 0, 0);
+    }
+  }
+@media screen and (min-width: 1000px) {
+    body{
+        background-color: rgb(226, 139, 31);
+    }
+}
